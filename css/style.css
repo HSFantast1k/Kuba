@@ -102,6 +102,19 @@ body {
     border-bottom: 1px solid rgba(208, 212, 216, .5);
 }
 
+.menu__btn {
+    display: none;
+    width: 40px;
+    cursor: pointer;
+}
+
+.menu__btn span{
+    display: block;
+    margin-bottom: 10px;
+    background-color: #FFD600;
+    height: 4px;
+}
+
 .menu__list {
     display: flex;
     justify-content: center;
@@ -252,6 +265,10 @@ body {
     position: relative;
 }
 
+.about__images-box img{
+    width: 100%;
+}
+
 .about__dot {
     width: 32px;
     height: 32px;
@@ -341,7 +358,7 @@ body {
 }
 
 .photo-text {
-    padding: 48px;
+    padding-bottom: 48px;
     margin-bottom: 56px;
     position: relative;
 }
@@ -385,6 +402,31 @@ body {
     right: -20px;
 }
 
+.slick-dots {
+    display: flex;
+    justify-content: center;
+} 
+
+.slick-dots button{
+    padding: 0;
+    font-size: 0;
+    border: none;
+    background-color: #FFD600;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.slick-dots .slick-active button {
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #FFD600;
+    background-color: #fff;
+}
+
 .footer {
     background: #F8F8F8;
     padding: 55px 0 32px;
@@ -393,6 +435,7 @@ body {
 .footer__items {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer__item {
